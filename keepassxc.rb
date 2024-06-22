@@ -11,11 +11,6 @@ cask "keepassxc" do
   desc "Password manager app"
   homepage "https://keepassxc.org/"
 
-  livecheck do
-    url :url
-    strategy :github_latest
-  end
-
   conflicts_with cask: "homebrew/cask-versions/keepassxc-beta"
   depends_on macos: ">= :high_sierra"
 
